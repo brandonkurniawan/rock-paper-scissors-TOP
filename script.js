@@ -12,3 +12,9 @@ function getComputerChoice(){
     }
     return choice;
 };
+
+function getHumanChoice(){
+    let choice = prompt("Enter your choice:\n(rock / paper / scissors)");
+    choice = choice.toLowerCase();
+    return choice;
+};
