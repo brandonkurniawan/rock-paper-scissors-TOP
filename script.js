@@ -18,3 +18,6 @@ function getHumanChoice(){
     choice = choice.toLowerCase();
     return choice;
 };
+
+let humanScore = 0;
+let computerScore = 0;
