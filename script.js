@@ -22,10 +22,9 @@ function getHumanChoice(){
 let humanScore = 0;
 let computerScore = 0;
 
-const humanChoice = getHumanChoice();
-const computerChoice = getComputerChoice();
-
-function playRound(humanChoice, computerChoice){
+function playRound(){
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
     switch(true){
         case(humanChoice == "rock" && computerChoice == "rock"):
             console.log("Draw!");
