@@ -1,5 +1,3 @@
-console.log("Welcome Player!");
-
 function getComputerChoice(){
     let choice;
     let random = (Math.ceil(Math.random() * 3));
@@ -61,4 +59,12 @@ function playRound(){
             break;
     }
     return console.log("Player Score: " + humanScore + "\nComputer Score: " + computerScore);
+}
+
+function playGame(){
+    humanScore = computerScore = 0;
+    for(let i=0; i<5; i){
+        playRound();
+        i = humanScore + computerScore;
+    }
 }
