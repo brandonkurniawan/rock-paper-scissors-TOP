@@ -24,7 +24,7 @@ function playRound(){
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
     switch(true){
-        case(humanChoice == "rock" && computerChoice == "rock"):
+        case(humanChoice == "rock" && computerChoice == "rock" || humanChoice == "paper" && computerChoice == "paper" || humanChoice == "scissors" && computerChoice == "scissors"):
             console.log("Draw!");
             break;
         case(humanChoice == "rock" && computerChoice == "paper"):
@@ -39,9 +39,6 @@ function playRound(){
             console.log("You win! Paper beats Rock");
             humanScore++;
             break;
-        case(humanChoice == "paper" && computerChoice == "paper"):
-            console.log("Draw!");
-            break;
         case(humanChoice == "paper" && computerChoice == "scissors"):
             console.log("You lose! Scissors beats Paper");
             computerScore++;
@@ -53,9 +50,6 @@ function playRound(){
         case(humanChoice == "scissors" && computerChoice == "paper"):
             console.log("You win! Scissors beats Paper");
             humanScore++;
-            break;
-        case(humanChoice == "scissors" && computerChoice == "scissors"):
-            console.log("Draw!");
             break;
     }
     return console.log("Player Score: " + humanScore + "\nComputer Score: " + computerScore);
