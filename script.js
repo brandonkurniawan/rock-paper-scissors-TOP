@@ -68,3 +68,5 @@ function playGame(){
         i = humanScore + computerScore;
     }
 }
+
+window.addEventListener("load", playGame());
